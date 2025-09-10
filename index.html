@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EternaFrame - Premium Art Gallery & Custom Framing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>EternaFrame</h1>
+                <p class="brand-slogan">Preserving Moments, Creating Memories</p>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#art-types" class="nav-link">Art Types</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to EternaFrame</h1>
+            <p class="hero-subtitle">Where Art Meets Elegance</p>
+            <p class="hero-description">Discover our curated collection of premium artwork and custom framing services. Transform your space with pieces that tell your story and preserve your most cherished memories.</p>
+            <button class="cta-button" onclick="scrollToSection('gallery')">Explore Gallery</button>
+        </div>
+        <div class="hero-image">
+            <img src="/images/wel-img.jpeg" alt="EternaFrame Gallery Interior">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 1995, EternaFrame has been at the forefront of premium art curation and custom framing for over two decades. What started as a small family business has grown into a trusted name in the art community, serving collectors, artists, and art enthusiasts worldwide.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>We believe that every piece of art deserves the perfect frame, and every memory deserves to be preserved beautifully. Our expert craftsmen combine traditional techniques with modern innovation to create frames that not only protect but enhance your artwork.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>10,000+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>25+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <p>Art Pieces</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./images/art-corporate.jpg" alt="EternaFrame Workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Featured Gallery</h2>
+            <p class="section-subtitle">Discover our curated collection of exceptional artwork</p>
+            
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/art-abstract.jpg" alt="Abstract Modern Art">
+                    <div class="gallery-overlay">
+                        <h3>Abstract Expressions</h3>
+                        <p>$299 - $899</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/s1-img.webp" alt="Landscape Painting">
+                    <div class="gallery-overlay">
+                        <h3>Serene Landscapes</h3>
+                        <p>$399 - $1,299</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/art-portrait.jpg" alt="Portrait Art">
+                    <div class="gallery-overlay">
+                        <h3>Classic Portraits</h3>
+                        <p>$599 - $1,899</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/c1-img.jpg" alt="Contemporary Art">
+                    <div class="gallery-overlay">
+                        <h3>Contemporary Pieces</h3>
+                        <p>$199 - $799</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/bot-img.avif" alt="Botanical Art">
+                    <div class="gallery-overlay">
+                        <h3>Botanical Studies</h3>
+                        <p>$149 - $599</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/e1.avif" alt="Geometric Art">
+                    <div class="gallery-overlay">
+                        <h3>Geometric Harmony</h3>
+                        <p>$249 - $699</p>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Types Section -->
+    <section id="art-types" class="art-types">
+        <div class="container">
+            <h2>Art Categories</h2>
+            <p class="section-subtitle">Perfect pieces for every occasion and space</p>
+            
+            <div class="types-grid">
+                <div class="type-card">
+                    <img src="./images/birthday-art.png" alt="Birthday Gifts">
+                    <div class="type-content">
+                        <h3>Birthday Gifts</h3>
+                        <p>Celebrate special moments with personalized artwork and custom frames that capture the joy of birthdays.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="./images/wedding-art.jpeg" alt="Wedding Gifts">
+                    <div class="type-content">
+                        <h3>Wedding Gifts</h3>
+                        <p>Commemorate love stories with romantic artwork and elegant frames perfect for newlyweds.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="./images/corporate-art.jpg" alt="Corporate Art">
+                    <div class="type-content">
+                        <h3>Corporate</h3>
+                        <p>Enhance professional spaces with sophisticated artwork that reflects your company's values and vision.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="./images/sch-img.webp" alt="School & College">
+                    <div class="type-content">
+                        <h3>School & College</h3>
+                        <p>Honor academic achievements with inspiring artwork and custom frames for educational milestones.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="./images/trad-img.jpg" alt="Traditional Art">
+                    <div class="type-content">
+                        <h3>Traditional</h3>
+                        <p>Preserve cultural heritage with authentic traditional artwork and classic framing styles.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <img src="./images/dev-img.webp" alt="Devotional Art">
+                    <div class="type-content">
+                        <h3>Devotional</h3>
+                        <p>Find peace and inspiration with our collection of spiritual and devotional artwork.</p>
+                        <button class="explore-btn">Explore Collection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Ready to find your perfect piece? We're here to help.</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="custom-framing">Custom Framing</option>
+                                <option value="art-purchase">Art Purchase</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Visit Our Gallery</h3>
+                        <p>123 Art District Avenue<br>Creative Quarter, NY 10001</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Contact Details</h3>
+                        <p>Phone: (555) 123-4567<br>Email: info@eternaframe.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Gallery Hours</h3>
+                        <p>Mon-Fri: 9:00 AM - 7:00 PM<br>Sat-Sun: 10:00 AM - 6:00 PM</p>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Pinterest</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EternaFrame</h3>
+                    <p>Preserving Moments, Creating Memories</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#art-types">Art Types</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <a href="#">Custom Framing</a>
+                        <a href="#">Art Consultation</a>
+                        <a href="#">Installation</a>
+                        <a href="#">Restoration</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EternaFrame. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
